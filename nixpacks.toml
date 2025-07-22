@@ -3,3 +3,6 @@ cmds = ["npm install --omit=optional"]
 
 [start]
 cmd = "node index.js"
+
+[phases.setup]
+  aptPkgs = ['libopus0']
