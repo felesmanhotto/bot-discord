@@ -2,21 +2,14 @@
   "name": "bot-discord",
   "version": "1.0.0",
   "main": "index.js",
-  "resolutions": {
-    "@discordjs/opus": "0.0.0",
-    "node-opus": "0.0.0",
-    "opusscript": "0.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "echo Skipping native modules",
-    "fix": "npx npm-force-resolutions",
-    "start": "node index.js"
-  },
-  "keywords": [],
+  "description": "",
   "author": "",
   "license": "ISC",
-  "description": "",
+  "scripts": {
+    "start": "node index.js",
+    "prepare": "echo Skipping native modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "@discordjs/voice": "^0.18.0",
     "discord.js": "^14.21.0",
@@ -28,5 +21,11 @@
   },
   "devDependencies": {
     "npm-force-resolutions": "^0.0.10"
+  },
+  "overrides": {
+    "@discordjs/opus": "npm:@empty@1.0.0",
+    "opusscript": "npm:@empty@1.0.0",
+    "node-opus": "npm:@empty@1.0.0"
   }
 }
+
